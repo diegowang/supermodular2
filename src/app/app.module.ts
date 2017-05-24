@@ -13,6 +13,8 @@ import { SlideBoxModule } from '../pages/slide-box/slide-box.module';
 import { WordpressModule } from '../pages/wordpress/wordpress.module';
 import { MyApp } from './app.component';
 
+import { OAuthModule } from '../pages/oauth/oauth.module';
+
 @NgModule({
 	declarations: [
 		MyApp
@@ -27,7 +29,8 @@ import { MyApp } from './app.component';
 		GoogleMapsModule,
 		HomeModule,
 		SlideBoxModule,
-		WordpressModule
+		WordpressModule,
+		OAuthModule
 	],
 	bootstrap: [IonicApp],
 	entryComponents: [
