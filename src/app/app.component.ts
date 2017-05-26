@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home.page';
 import { SlideBoxPage } from '../pages/slide-box/slide-box.page';
 import { WordpressListPage } from '../pages/wordpress/list/wordpress.list.page';
 import { OAuthProvidersListPage } from '../pages/oauth/list/oauth-providers.list.page';
+import { Dashboard } from './../pages/dashboard/dashboard';
 
 @Component({
 	templateUrl: 'app.html'
@@ -36,7 +37,8 @@ export class MyApp {
 			{ title: 'Slides', component: SlideBoxPage, icon: 'swap' },
 			{ title: 'Google maps', component: GoogleMapsPage, icon: 'map' },
 			{ title: 'Components', component: ComponentsListPage, icon: 'grid' },
-			{ title: 'OAuth', component: OAuthProvidersListPage, icon: 'log-in' }
+			{ title: 'OAuth', component: OAuthProvidersListPage, icon: 'log-in' },
+			{ title: 'CAS', component: Dashboard, icon: 'log-in' }
 		];
 
 		this.rootPage = HomePage;
