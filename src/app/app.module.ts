@@ -14,6 +14,8 @@ import { WordpressModule } from '../pages/wordpress/wordpress.module';
 import { MyApp } from './app.component';
 
 import { OAuthModule } from '../pages/oauth/oauth.module';
+import { DashboardModule } from './../pages/dashboard/dashboard.module';
+import { AuthService } from './../services/auth.service';
 
 @NgModule({
 	declarations: [
@@ -30,7 +32,8 @@ import { OAuthModule } from '../pages/oauth/oauth.module';
 		HomeModule,
 		SlideBoxModule,
 		WordpressModule,
-		OAuthModule
+		OAuthModule,
+		DashboardModule
 	],
 	bootstrap: [IonicApp],
 	entryComponents: [
@@ -38,7 +41,8 @@ import { OAuthModule } from '../pages/oauth/oauth.module';
 	],
 	providers: [
 		Config,
-		StatusBar
+		StatusBar,
+		AuthService
 	]
 })
 export class AppModule {

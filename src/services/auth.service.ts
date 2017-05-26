@@ -1,10 +1,10 @@
-import { environment } from './../environments/environment.dev';
-import { environment } from './../environments/environment';
 import { Injectable, EventEmitter } from '@angular/core';
 import { Http, Headers, RequestOptions, Response } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 
 import { UserManager, User } from 'oidc-client';
+import { environment } from './../environments/environment';
+
 
 const config: any = {
   authority: 'https://localhost',
